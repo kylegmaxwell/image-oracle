@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "@google-cloud/vision": "^0.12.0",
+    "dotenv": "^4.0.0",
+    "request": "^2.83.0"
+  },
+  "name": "image-oracle",
+  "version": "1.0.0",
+  "description": "Find similar categories of images",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node --inspect-brk --experimental-modules src/index.mjs",
+    "test": "test"
+  },
+  "keywords": [
+    "vision",
+    "ml"
+  ],
+  "author": "kylegmaxwell",
+  "license": "ISC"
+}
