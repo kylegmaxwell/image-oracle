@@ -10,7 +10,8 @@
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
-    "start": "node --inspect-brk --experimental-modules src/index.mjs",
+    "start": "node --experimental-modules src/index.mjs",
+    "debug": "node --inspect-brk --experimental-modules src/index.mjs",
     "test": "test"
   },
   "keywords": [

@@ -1,6 +1,6 @@
 'use strict';
 
-import data from "./data.mjs";
+import * as data from "./data.mjs";
 import vision from "./vision.mjs";
 import dotenv from "dotenv";
 
@@ -12,11 +12,16 @@ async function main() {
   }
 
   let path = "./data/original/"
-  let imageData = data(path);
-
+  let items = await data.getImageItems(path);
   try {
-    let response = await vision(imageData);
-    console.log(response);
+    for (let i=0;i<items.length;i++) {
+      const item = items[i];
+      console.log(item);
+      const response = await vision(item);
+      const labels = JSON.stringify(response, null, 1);
+      data.writeLabels(item, labels);
+    }
+
   } catch (e) {
     console.log(e);
   }
