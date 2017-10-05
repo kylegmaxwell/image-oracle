@@ -10,24 +10,45 @@ function getImage(itemPath) {
   });
 };
 
+// get a list of image paths in a directory
+// skip images that already have json
 export async function getImageItems(path) {
   let allItems = await getItems(path);
   let items = [];
   let extensions = ['jpg', 'png'];
   for (let i=0; i<allItems.length; i++) {
     let item = allItems[i];
-    let split = item.split('.');
-    let extension = split[split.length-1];
-    if (extensions.indexOf(extension.toLowerCase())!==-1) {
+    if (extensions.indexOf(extension(item)) !== -1) {
       const stats = fs.statSync(item);
       const fileSizeMB = stats.size / 1000000.0;
-      // Vision api supports up to 4MB
-      if (fileSizeMB < 4) {
+
+      const itemJson = changeExtension(item);
+      const hasJson = exists(itemJson);
+
+      if (hasJson) {
+        items.push(itemJson);
+      } else if (fileSizeMB < 4) {
+        // Vision api supports up to 4MB
         items.push(item);
       }
     }
   }
   return items;
+}
+export function extension(path) {
+  let split = path.split('.');
+  let extension = split[split.length-1];
+  return extension.toLowerCase();
+}
+
+function exists(path) {
+  try{
+      fs.accessSync(path)
+  }
+  catch (e) {
+    return false;
+  }
+  return true;
 }
 
 function getItems(path){
@@ -42,9 +63,19 @@ function getItems(path){
   });
 }
 
-export function writeLabels(imagePath, labels) {
-  const split = imagePath.split('.');
+function changeExtension(path) {
+  const split = path.split('.');
   const extension = split[split.length-1];
-  const outPath = imagePath.substring(0,imagePath.length-extension.length)+'json';
+  return path.substring(0,path.length-extension.length)+'json';
+}
+
+export function writeLabels(imagePath, labels) {
+  const outPath = changeExtension(imagePath);
   fs.writeFileSync(outPath, labels);
+  return outPath
+}
+
+export function readLabel(path) {
+  const annotations = JSON.parse(fs.readFileSync(path, 'utf8'))[0].labelAnnotations;
+  return annotations.map(o=>o.description);
 }
