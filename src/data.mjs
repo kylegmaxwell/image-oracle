@@ -12,7 +12,7 @@ function getImage(itemPath) {
 
 // get a list of image paths in a directory
 // skip images that already have json
-export async function getImageItems(path) {
+export async function getImageItemsOrJson(path) {
   let allItems = await getItems(path);
   let items = [];
   let extensions = ['jpg', 'png'];

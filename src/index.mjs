@@ -11,19 +11,21 @@ async function main() {
     // console.log(process.env.VISION_KEY);
   }
 
-  let path = "./data/original/"
-  let items = await data.getImageItems(path);
+  // let path = "./data/original/"
+  let path = "./data/imposter/"
+  let items = await data.getImageItemsOrJson(path);
   let itemLabels=[];
   try {
     // Process items
     for (let i=0;i<items.length;i++) {
-      const item = items[i];
+      let item = items[i];
+      console.log(item);
       let labels;
       //console.log(item);
       if (data.extension(item)!='json') {
         const response = await vision(item);
         labels = JSON.stringify(response, null, 1);
-        items = data.writeLabels(item, labels);
+        item = data.writeLabels(item, labels);
         items[i] = item;
       }
       itemLabels.push(data.readLabel(item));
