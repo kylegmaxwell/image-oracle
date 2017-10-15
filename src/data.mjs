@@ -15,7 +15,7 @@ function getImage(itemPath) {
 export async function getImageItemsOrJson(path) {
   let allItems = await getItems(path);
   let items = [];
-  let extensions = ['jpg', 'png'];
+  let extensions = ['jpg', 'jpeg', 'png'];
   for (let i=0; i<allItems.length; i++) {
     let item = allItems[i];
     if (extensions.indexOf(extension(item)) !== -1) {

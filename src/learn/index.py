@@ -2,6 +2,8 @@ import glob
 
 import vectorize
 
+import shuffle
+
 def main():
     print("hello")
 
@@ -20,16 +22,39 @@ def main():
     print(labelList)
 
     originalVec = vec.getVectors(labelList, originalFiles)
-    printVec(originalVec);
 
+    # Add the y values
+    for v in originalVec:
+        v.append(1)
     imposterVec = vec.getVectors(labelList, imposterFiles)
-    printVec(imposterVec);
+    for v in imposterVec:
+        v.append(0)
 
+    # Combine vectors
+    vec = originalVec
+    vec.extend(imposterVec)
 
-def printVec(vec):
+    shuffle.shuffle(vec)
+
+    # Use most of the data to train and save a fraction for testing accuracy
+    cutoff = int(len(vec)*0.8)
+
+    trainVec = vec[0:cutoff]
+    testVec = vec[cutoff:]
+
+    # Write data out to csv files
+    printVec('train',trainVec)
+    printVec('test',testVec)
+
+def printVec(name, vec):
+    path = f"data/{name}.csv"
+    f = open(path, 'w')
+    f.write(f"{len(vec)},{len(vec[0])-1},not,original\n")
     for v in vec:
-        # print(",".join(v))
-        print("")
-        print(str(v))
-    print(len(vec))
+        for i in range(0,len(v)):
+            f.write(str(v[i]))
+            if i<len(v)-1:
+                f.write(',')
+        f.write('\n')
+    f.close()
 main()
