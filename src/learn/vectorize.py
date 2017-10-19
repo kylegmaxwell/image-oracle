@@ -51,6 +51,7 @@ class Vectorizer:
 
     def getVectors(self, labelList, labelFiles):
         vecs = []
+        files = []
         # for each image
         for i in range(0,len(labelFiles)):
             file = labelFiles[i]
@@ -66,10 +67,11 @@ class Vectorizer:
                 labelVec.append(value)
             # print("\n"+str(labelVec))
             vecs.append(labelVec)
-        return vecs
+            files.append(file)
+        return [vecs, files]
 
-def vectorize(trainFile, testFile):
-    vec = vectorize.Vectorizer()
+def vectorize(trainFile, testFile, minCount):
+    vec = Vectorizer()
 
     # Load all the JSON files with annotation data
     originalFiles = glob.glob("./data/original/*.json")
@@ -80,15 +82,20 @@ def vectorize(trainFile, testFile):
     print("imposter "+str(len(imposterFiles)))
     vec.parseLabels(imposterFiles)
 
-    labelList = vec.getLabels(2)
-    print(labelList)
+    labelList = vec.getLabels(minCount)
 
-    originalVec = vec.getVectors(labelList, originalFiles)
+    vecFileTemp = vec.getVectors(labelList, originalFiles)
+    originalVec = vecFileTemp[0]
+    originalFileList = vecFileTemp[1]
 
     # Add the y values
     for v in originalVec:
         v.append(1)
-    imposterVec = vec.getVectors(labelList, imposterFiles)
+
+    vecFileTemp = vec.getVectors(labelList, imposterFiles)
+    imposterVec = vecFileTemp[0]
+    imposterFileList = vecFileTemp[1]
+
     for v in imposterVec:
         v.append(0)
 
@@ -96,7 +103,14 @@ def vectorize(trainFile, testFile):
     vec = originalVec
     vec.extend(imposterVec)
 
-    shuffle.shuffle(vec)
+    fileList = originalFileList
+    fileList.extend(imposterFileList)
+
+    index = shuffle.shuffle(vec)
+
+    shuffledFileList = [0 for x in fileList]
+    for i in range(0,len(index)):
+        shuffledFileList[i] = fileList[index[i]]
 
     # Use most of the data to train and save a fraction for testing accuracy
     cutoff = int(len(vec)*0.8)
@@ -104,11 +118,26 @@ def vectorize(trainFile, testFile):
     trainVec = vec[0:cutoff]
     testVec = vec[cutoff:]
 
+    trainFiles = shuffledFileList[0:cutoff]
+    testFiles = shuffledFileList[cutoff:]
+
+    printFiles(f"{trainFile}-index.csv", trainFiles)
+    printFiles(f"{testFile}-index.csv", testFiles)
+
     # Write data out to csv files
-    printVec(trainFile,trainVec)
-    printVec(testFile,testVec)
+    printVec(f"{trainFile}.csv",trainVec)
+    printVec(f"{testFile}.csv",testVec)
+
+def printFiles(path, files):
+    print(f"Write file {path}")
+    f = open(path, 'w')
+    for file in files:
+        f.write(file)
+        f.write('\n')
+    f.close()
 
 def printVec(path, vec):
+    print(f"Write file {path}")
     f = open(path, 'w')
     f.write(f"{len(vec)},{len(vec[0])-1},not,original\n")
     for v in vec:

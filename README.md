@@ -3,4 +3,5 @@ This is a computer vision and machine learning tool that will learn a class of i
 
 # Run
 yarn start
+
 py3 src/learn/index.py
