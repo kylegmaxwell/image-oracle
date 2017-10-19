@@ -12,7 +12,7 @@ import shutil
 N_CLASSES = 2
 TMP_DIR = "C:\\tmp\\image_model"
 
-def flow(trainPath, testPath):
+def flow(trainPath, testPath, steps):
   print("flow")
   nColumns = getColumnsFromFile(trainPath)
 
@@ -46,7 +46,7 @@ def flow(trainPath, testPath):
 
   # Train model.
   print('Training...')
-  classifier.train(input_fn=train_input_fn, steps=2000)
+  classifier.train(input_fn=train_input_fn, steps=steps)
 
   # Define the test inputs
   test_input_fn = tf.estimator.inputs.numpy_input_fn(
@@ -67,6 +67,18 @@ def flow(trainPath, testPath):
   predicted_classes = [p["classes"] for p in predictions]
 
   print(f"Predictions {list([int(c[0]) for c in predicted_classes])}")
+
+  # Predict the zero vector to see how it would handle unrecognized images
+  new_samples = np.array(
+      [list(range(0,nColumns))], dtype=np.float32)
+  predict_input_fn = tf.estimator.inputs.numpy_input_fn(
+      x={"x": new_samples},
+      num_epochs=1,
+      shuffle=False)
+
+  predictions = list(classifier.predict(input_fn=predict_input_fn))
+  predicted_classes = [p["classes"] for p in predictions]
+  print(f"Zero Prediction {list([int(c[0]) for c in predicted_classes])}")
 
 def getColumnsFromFile(path):
     f = open(path, 'r')

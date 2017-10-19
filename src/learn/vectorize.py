@@ -82,7 +82,9 @@ def vectorize(trainFile, testFile, minCount):
     print("imposter "+str(len(imposterFiles)))
     vec.parseLabels(imposterFiles)
 
-    labelList = vec.getLabels(minCount)
+    # use list comprehesnsion to clone list
+    labelList = [x for x in vec.getLabels(minCount)]
+    printFiles("./data/labels.csv",labelList)
 
     vecFileTemp = vec.getVectors(labelList, originalFiles)
     originalVec = vecFileTemp[0]
