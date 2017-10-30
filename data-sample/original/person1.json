@@ -1,0 +1,126 @@
+[
+ {
+  "faceAnnotations": [],
+  "landmarkAnnotations": [],
+  "logoAnnotations": [],
+  "labelAnnotations": [
+   {
+    "mid": "/m/01g317",
+    "locale": "",
+    "description": "person",
+    "score": 0.9335287809371948,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/01qkbx",
+    "locale": "",
+    "description": "professional",
+    "score": 0.866767406463623,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/0f9swq",
+    "locale": "",
+    "description": "chin",
+    "score": 0.8207889199256897,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/012t_z",
+    "locale": "",
+    "description": "businessperson",
+    "score": 0.724094033241272,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/0n5szg6",
+    "locale": "",
+    "description": "business executive",
+    "score": 0.7138583064079285,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/01kq3x",
+    "locale": "",
+    "description": "white collar worker",
+    "score": 0.704410195350647,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/09x_r",
+    "locale": "",
+    "description": "entrepreneur",
+    "score": 0.6941771507263184,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/019nj4",
+    "locale": "",
+    "description": "smile",
+    "score": 0.6287009119987488,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/09s1f",
+    "locale": "",
+    "description": "business",
+    "score": 0.553074836730957,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/01dv4h",
+    "locale": "",
+    "description": "portrait",
+    "score": 0.5515772700309753,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   }
+  ],
+  "textAnnotations": [],
+  "fullTextAnnotation": null,
+  "safeSearchAnnotation": null,
+  "imagePropertiesAnnotation": null,
+  "cropHintsAnnotation": null,
+  "webDetection": null,
+  "error": null
+ }
+]

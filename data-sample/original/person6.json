@@ -1,0 +1,126 @@
+[
+ {
+  "faceAnnotations": [],
+  "landmarkAnnotations": [],
+  "logoAnnotations": [],
+  "labelAnnotations": [
+   {
+    "mid": "/m/01g317",
+    "locale": "",
+    "description": "person",
+    "score": 0.9541537165641785,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/0dzct",
+    "locale": "",
+    "description": "face",
+    "score": 0.9480248093605042,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/04yx4",
+    "locale": "",
+    "description": "man",
+    "score": 0.9414675235748291,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/0f9swq",
+    "locale": "",
+    "description": "chin",
+    "score": 0.910750150680542,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/027n3_",
+    "locale": "",
+    "description": "eyebrow",
+    "score": 0.9028847217559814,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/025kyy",
+    "locale": "",
+    "description": "forehead",
+    "score": 0.8930654525756836,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/04hgtk",
+    "locale": "",
+    "description": "head",
+    "score": 0.8592275977134705,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/019nj4",
+    "locale": "",
+    "description": "smile",
+    "score": 0.8341079354286194,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/0ds4x",
+    "locale": "",
+    "description": "hairstyle",
+    "score": 0.8075801730155945,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/037p5b",
+    "locale": "",
+    "description": "cheek",
+    "score": 0.7725631594657898,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   }
+  ],
+  "textAnnotations": [],
+  "fullTextAnnotation": null,
+  "safeSearchAnnotation": null,
+  "imagePropertiesAnnotation": null,
+  "cropHintsAnnotation": null,
+  "webDetection": null,
+  "error": null
+ }
+]

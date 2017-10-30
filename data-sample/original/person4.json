@@ -1,0 +1,126 @@
+[
+ {
+  "faceAnnotations": [],
+  "landmarkAnnotations": [],
+  "logoAnnotations": [],
+  "labelAnnotations": [
+   {
+    "mid": "/m/01g317",
+    "locale": "",
+    "description": "person",
+    "score": 0.9271823763847351,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/0f9swq",
+    "locale": "",
+    "description": "chin",
+    "score": 0.8959026336669922,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/01qkbx",
+    "locale": "",
+    "description": "professional",
+    "score": 0.8880149722099304,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/0h8jxfl",
+    "locale": "",
+    "description": "vision care",
+    "score": 0.8140148520469666,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/0jyfg",
+    "locale": "",
+    "description": "glasses",
+    "score": 0.7765900492668152,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/025kyy",
+    "locale": "",
+    "description": "forehead",
+    "score": 0.7760902047157288,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/027v9wk",
+    "locale": "",
+    "description": "elder",
+    "score": 0.7479576468467712,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/035y33",
+    "locale": "",
+    "description": "official",
+    "score": 0.7063451409339905,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/01dv4h",
+    "locale": "",
+    "description": "portrait",
+    "score": 0.6631061434745789,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/0j272k5",
+    "locale": "",
+    "description": "eyewear",
+    "score": 0.6488613486289978,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   }
+  ],
+  "textAnnotations": [],
+  "fullTextAnnotation": null,
+  "safeSearchAnnotation": null,
+  "imagePropertiesAnnotation": null,
+  "cropHintsAnnotation": null,
+  "webDetection": null,
+  "error": null
+ }
+]

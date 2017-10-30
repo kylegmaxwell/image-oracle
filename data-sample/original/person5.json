@@ -1,0 +1,126 @@
+[
+ {
+  "faceAnnotations": [],
+  "landmarkAnnotations": [],
+  "logoAnnotations": [],
+  "labelAnnotations": [
+   {
+    "mid": "/m/01f43",
+    "locale": "",
+    "description": "beauty",
+    "score": 0.884857177734375,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/027n3_",
+    "locale": "",
+    "description": "eyebrow",
+    "score": 0.8729763627052307,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/019nj4",
+    "locale": "",
+    "description": "smile",
+    "score": 0.8232837319374084,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/0f9swq",
+    "locale": "",
+    "description": "chin",
+    "score": 0.8078259229660034,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/01dv4h",
+    "locale": "",
+    "description": "portrait",
+    "score": 0.7944415807723999,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/05wkw",
+    "locale": "",
+    "description": "photography",
+    "score": 0.7889102101325989,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/01qkbx",
+    "locale": "",
+    "description": "professional",
+    "score": 0.7876469492912292,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/0n5szg6",
+    "locale": "",
+    "description": "business executive",
+    "score": 0.7865521311759949,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/02pd__z",
+    "locale": "",
+    "description": "long hair",
+    "score": 0.7156744599342346,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/05r655",
+    "locale": "",
+    "description": "girl",
+    "score": 0.7016300559043884,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   }
+  ],
+  "textAnnotations": [],
+  "fullTextAnnotation": null,
+  "safeSearchAnnotation": null,
+  "imagePropertiesAnnotation": null,
+  "cropHintsAnnotation": null,
+  "webDetection": null,
+  "error": null
+ }
+]

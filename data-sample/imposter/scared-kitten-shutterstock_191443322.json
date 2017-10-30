@@ -1,0 +1,126 @@
+[
+ {
+  "faceAnnotations": [],
+  "landmarkAnnotations": [],
+  "logoAnnotations": [],
+  "labelAnnotations": [
+   {
+    "mid": "/m/01yrx",
+    "locale": "",
+    "description": "cat",
+    "score": 0.9937200546264648,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/01l7qd",
+    "locale": "",
+    "description": "whiskers",
+    "score": 0.9638940095901489,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/04rky",
+    "locale": "",
+    "description": "mammal",
+    "score": 0.9236746430397034,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/07k6w8",
+    "locale": "",
+    "description": "small to medium sized cats",
+    "score": 0.9224286079406738,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/0307l",
+    "locale": "",
+    "description": "cat like mammal",
+    "score": 0.8902845978736877,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/0hjzp",
+    "locale": "",
+    "description": "kitten",
+    "score": 0.8736280202865601,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/0k0pj",
+    "locale": "",
+    "description": "nose",
+    "score": 0.8718225359916687,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/014sv8",
+    "locale": "",
+    "description": "eye",
+    "score": 0.8194295763969421,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/05mqq3",
+    "locale": "",
+    "description": "snout",
+    "score": 0.7450255751609802,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/02w7c7",
+    "locale": "",
+    "description": "ragdoll",
+    "score": 0.7087927460670471,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   }
+  ],
+  "textAnnotations": [],
+  "fullTextAnnotation": null,
+  "safeSearchAnnotation": null,
+  "imagePropertiesAnnotation": null,
+  "cropHintsAnnotation": null,
+  "webDetection": null,
+  "error": null
+ }
+]

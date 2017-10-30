@@ -1,5 +1,7 @@
 import random
 
+# Pseudo random shuffle of an array
+# Sets seed so results are always the same
 def shuffle(arr):
 
     random.seed(0)
@@ -13,6 +15,7 @@ def shuffle(arr):
             swap(index,i,idx)
     return index
 
+# Swap the ith and jth items in an array
 def swap(arr, i, j):
     tmp    = arr[i]
     arr[i] = arr[j]

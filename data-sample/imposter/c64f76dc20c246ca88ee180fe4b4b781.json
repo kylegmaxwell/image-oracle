@@ -1,0 +1,126 @@
+[
+ {
+  "faceAnnotations": [],
+  "landmarkAnnotations": [],
+  "logoAnnotations": [],
+  "labelAnnotations": [
+   {
+    "mid": "/m/01yrx",
+    "locale": "",
+    "description": "cat",
+    "score": 0.9936373233795166,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/06z04",
+    "locale": "",
+    "description": "skin",
+    "score": 0.9355698227882385,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/07k6w8",
+    "locale": "",
+    "description": "small to medium sized cats",
+    "score": 0.9211148619651794,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/01l7qd",
+    "locale": "",
+    "description": "whiskers",
+    "score": 0.9046887755393982,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/0307l",
+    "locale": "",
+    "description": "cat like mammal",
+    "score": 0.8787661790847778,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/0hjzp",
+    "locale": "",
+    "description": "kitten",
+    "score": 0.8675025105476379,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/014sv8",
+    "locale": "",
+    "description": "eye",
+    "score": 0.8177363276481628,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/035qhg",
+    "locale": "",
+    "description": "fauna",
+    "score": 0.8005141019821167,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/02cqfm",
+    "locale": "",
+    "description": "close up",
+    "score": 0.7112972140312195,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/012c9l",
+    "locale": "",
+    "description": "domestic short haired cat",
+    "score": 0.6792716979980469,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   }
+  ],
+  "textAnnotations": [],
+  "fullTextAnnotation": null,
+  "safeSearchAnnotation": null,
+  "imagePropertiesAnnotation": null,
+  "cropHintsAnnotation": null,
+  "webDetection": null,
+  "error": null
+ }
+]

@@ -2,8 +2,10 @@ import json
 import glob
 import shuffle
 
+# Class to handle aggregation and vectorization of labels
 class Vectorizer:
 
+    # Set up member variables
     def __init__(self):
         # keys are file names, values are all labels for that file
         self.fileLabels = {}
@@ -12,6 +14,8 @@ class Vectorizer:
         # map keys are all labels encountered, and value is frequency
         self.allLabels = {}
 
+    # Parse the label files in the list of files
+    # Results are stored in member data as maps
     def parseLabels(self, labelFiles):
         # Count the annotations in each file
         for file in labelFiles:
@@ -49,6 +53,11 @@ class Vectorizer:
         #     print(label + " " + str(allLabels[label]))
         return trimList
 
+    # Get the label vectors as a list
+    # @param labelList The list of labels to count in.
+    #                   Some labels are discarded if they are not frequent enough
+    # @param labelFiles The files to vectorize, each represents one data point (image / json)
+    # @returns [Label vectors, parallel list of correspoinding files]
     def getVectors(self, labelList, labelFiles):
         vecs = []
         files = []
@@ -62,14 +71,16 @@ class Vectorizer:
             for j in range(0,len(labelList)):
                 value = 0;
                 if labelList[j] in labels:
-                    # print(j, labelList[j])
                     value = scores[labelList[j]]
                 labelVec.append(value)
-            # print("\n"+str(labelVec))
             vecs.append(labelVec)
             files.append(file)
         return [vecs, files]
 
+# Read all json files for labels and write out results as csv
+# @param trainFile The path to write the training data (prefix no extension)
+# @param testFile The path to write the test data (prefix no extension)
+# @param minCount The minimum times a label must occur to be include in vectors
 def vectorize(trainFile, testFile, minCount):
     vec = Vectorizer()
 
@@ -130,6 +141,7 @@ def vectorize(trainFile, testFile, minCount):
     printVec(f"{trainFile}.csv",trainVec)
     printVec(f"{testFile}.csv",testVec)
 
+# Print the list of file names to a file
 def printFiles(path, files):
     print(f"Write file {path}")
     f = open(path, 'w')
@@ -138,6 +150,7 @@ def printFiles(path, files):
         f.write('\n')
     f.close()
 
+# Print a vector to a file
 def printVec(path, vec):
     print(f"Write file {path}")
     f = open(path, 'w')

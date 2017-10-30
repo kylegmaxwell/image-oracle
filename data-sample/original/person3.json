@@ -1,0 +1,126 @@
+[
+ {
+  "faceAnnotations": [],
+  "landmarkAnnotations": [],
+  "logoAnnotations": [],
+  "labelAnnotations": [
+   {
+    "mid": "/m/01g317",
+    "locale": "",
+    "description": "person",
+    "score": 0.9516136050224304,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/0f9swq",
+    "locale": "",
+    "description": "chin",
+    "score": 0.8776936531066895,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/025kyy",
+    "locale": "",
+    "description": "forehead",
+    "score": 0.8589208722114563,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/035y33",
+    "locale": "",
+    "description": "official",
+    "score": 0.8277400135993958,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/01qkbx",
+    "locale": "",
+    "description": "professional",
+    "score": 0.8174622058868408,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/04n7gmg",
+    "locale": "",
+    "description": "senior citizen",
+    "score": 0.7405007481575012,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/012t_z",
+    "locale": "",
+    "description": "businessperson",
+    "score": 0.6938777565956116,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/063km",
+    "locale": "",
+    "description": "profession",
+    "score": 0.6894347071647644,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/0289fz",
+    "locale": "",
+    "description": "executive officer",
+    "score": 0.6679033637046814,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/09x_r",
+    "locale": "",
+    "description": "entrepreneur",
+    "score": 0.6633715629577637,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   }
+  ],
+  "textAnnotations": [],
+  "fullTextAnnotation": null,
+  "safeSearchAnnotation": null,
+  "imagePropertiesAnnotation": null,
+  "cropHintsAnnotation": null,
+  "webDetection": null,
+  "error": null
+ }
+]

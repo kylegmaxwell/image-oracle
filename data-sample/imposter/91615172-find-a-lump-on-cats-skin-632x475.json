@@ -1,0 +1,126 @@
+[
+ {
+  "faceAnnotations": [],
+  "landmarkAnnotations": [],
+  "logoAnnotations": [],
+  "labelAnnotations": [
+   {
+    "mid": "/m/01yrx",
+    "locale": "",
+    "description": "cat",
+    "score": 0.994770884513855,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/01l7qd",
+    "locale": "",
+    "description": "whiskers",
+    "score": 0.9550279378890991,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/04rky",
+    "locale": "",
+    "description": "mammal",
+    "score": 0.9264410734176636,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/07k6w8",
+    "locale": "",
+    "description": "small to medium sized cats",
+    "score": 0.9190248250961304,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/035qhg",
+    "locale": "",
+    "description": "fauna",
+    "score": 0.8996569514274597,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/0307l",
+    "locale": "",
+    "description": "cat like mammal",
+    "score": 0.8911295533180237,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/014sv8",
+    "locale": "",
+    "description": "eye",
+    "score": 0.8690289258956909,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/02cqfm",
+    "locale": "",
+    "description": "close up",
+    "score": 0.807589054107666,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/04myxc",
+    "locale": "",
+    "description": "burmilla",
+    "score": 0.7803424596786499,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/0h3_j",
+    "locale": "",
+    "description": "australian mist",
+    "score": 0.7774080634117126,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   }
+  ],
+  "textAnnotations": [],
+  "fullTextAnnotation": null,
+  "safeSearchAnnotation": null,
+  "imagePropertiesAnnotation": null,
+  "cropHintsAnnotation": null,
+  "webDetection": null,
+  "error": null
+ }
+]

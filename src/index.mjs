@@ -4,16 +4,18 @@ import * as data from "./data.mjs";
 import vision from "./vision.mjs";
 import dotenv from "dotenv";
 
+// Process images and generate .json label files
 async function main() {
   // Load env vars if they are missing
   if (!process.env.NODE_ENV) {
     dotenv.load();
-    // console.log(process.env.VISION_KEY);
   }
 
-  // let path = "./data/original/"
-  let path = "./data/imposter/"
-  let items = await data.getImageItemsOrJson(path);
+  let pathOriginal = "./data/original/"
+  let pathImposter = "./data/imposter/"
+  let itemsOriginal = await data.getImageItemsOrJson(pathOriginal);
+  let itemsImposter = await data.getImageItemsOrJson(pathImposter);
+  let items = itemsOriginal.concat(itemsImposter)
   let itemLabels=[];
   try {
     // Process items
@@ -21,7 +23,6 @@ async function main() {
       let item = items[i];
       console.log(item);
       let labels;
-      //console.log(item);
       if (data.extension(item)!='json') {
         const response = await vision(item);
         labels = JSON.stringify(response, null, 1);
@@ -45,7 +46,7 @@ async function main() {
         }
       }
     }
-    //console.log(counter);
+
     let sortable = [];
     for (let k in counter) {
       sortable.push({label:k,count:counter[k]})

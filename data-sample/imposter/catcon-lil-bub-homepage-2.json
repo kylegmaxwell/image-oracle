@@ -1,0 +1,126 @@
+[
+ {
+  "faceAnnotations": [],
+  "landmarkAnnotations": [],
+  "logoAnnotations": [],
+  "labelAnnotations": [
+   {
+    "mid": "/m/01yrx",
+    "locale": "",
+    "description": "cat",
+    "score": 0.9916767477989197,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/01l7qd",
+    "locale": "",
+    "description": "whiskers",
+    "score": 0.9315711259841919,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/04rky",
+    "locale": "",
+    "description": "mammal",
+    "score": 0.9233003258705139,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/04y7lg1",
+    "locale": "",
+    "description": "dragon li",
+    "score": 0.9129909873008728,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/07k6w8",
+    "locale": "",
+    "description": "small to medium sized cats",
+    "score": 0.9108361005783081,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/0307l",
+    "locale": "",
+    "description": "cat like mammal",
+    "score": 0.8541527390480042,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/035qhg",
+    "locale": "",
+    "description": "fauna",
+    "score": 0.8340826630592346,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/014sv8",
+    "locale": "",
+    "description": "eye",
+    "score": 0.7853306531906128,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/0g4cd0",
+    "locale": "",
+    "description": "tabby cat",
+    "score": 0.773216724395752,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   },
+   {
+    "mid": "/m/05mqq3",
+    "locale": "",
+    "description": "snout",
+    "score": 0.7621837854385376,
+    "confidence": 0,
+    "topicality": 0,
+    "boundingPoly": null,
+    "locations": [],
+    "properties": []
+   }
+  ],
+  "textAnnotations": [],
+  "fullTextAnnotation": null,
+  "safeSearchAnnotation": null,
+  "imagePropertiesAnnotation": null,
+  "cropHintsAnnotation": null,
+  "webDetection": null,
+  "error": null
+ }
+]

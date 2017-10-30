@@ -11,7 +11,12 @@ import shutil
 
 N_CLASSES = 2
 TMP_DIR = "C:\\tmp\\image_model"
+OUT_FILE = "data/results.txt"
 
+# Run tensorflow to predict image categories
+# @param trainPath Path to the training data as csv
+# @param testPath Path to the test data as csv
+# @param steps Number of training iterations
 def flow(trainPath, testPath, steps):
   print("flow")
   nColumns = getColumnsFromFile(trainPath)
@@ -55,18 +60,22 @@ def flow(trainPath, testPath, steps):
       num_epochs=1,
       shuffle=False)
 
+  # Write results to a file
+  print(f"Write file {OUT_FILE}")
+  f = open(OUT_FILE, 'w')
+
   # Evaluate accuracy.
   prediction = classifier.evaluate(input_fn=test_input_fn)
 
-  print(f"Prediction accuracy: {int(100*prediction['accuracy'])}%")
+  f.write(f"Prediction accuracy: {int(100*prediction['accuracy'])}%\n")
 
 
-  print(f"Target      [{', '.join([str(x) for x in test_set.target])}]")
+  f.write(f"Target      [{', '.join([str(x) for x in test_set.target])}]\n")
 
   predictions = list(classifier.predict(input_fn=test_input_fn))
   predicted_classes = [p["classes"] for p in predictions]
 
-  print(f"Predictions {list([int(c[0]) for c in predicted_classes])}")
+  f.write(f"Predictions {list([int(c[0]) for c in predicted_classes])}\n")
 
   # Predict the zero vector to see how it would handle unrecognized images
   new_samples = np.array(
@@ -78,7 +87,9 @@ def flow(trainPath, testPath, steps):
 
   predictions = list(classifier.predict(input_fn=predict_input_fn))
   predicted_classes = [p["classes"] for p in predictions]
-  print(f"Zero Prediction {list([int(c[0]) for c in predicted_classes])}")
+  f.write(f"Zero Prediction {list([int(c[0]) for c in predicted_classes])}\n")
+
+  print("done")
 
 def getColumnsFromFile(path):
     f = open(path, 'r')

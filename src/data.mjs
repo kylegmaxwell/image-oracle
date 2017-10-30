@@ -2,14 +2,6 @@
 
 import fs from 'fs';
 
-function getImage(itemPath) {
-  return new Promise((resolve, reject)=>{
-    fs.readFile(itemPath, function(err, data){
-      resolve(data.toString('base64'));
-    });
-  });
-};
-
 // get a list of image paths in a directory
 // skip images that already have json
 export async function getImageItemsOrJson(path) {
@@ -35,12 +27,15 @@ export async function getImageItemsOrJson(path) {
   }
   return items;
 }
+
+// Get the file extension from a path string
 export function extension(path) {
   let split = path.split('.');
   let extension = split[split.length-1];
   return extension.toLowerCase();
 }
 
+// Check if a file path exists on disk
 function exists(path) {
   try{
       fs.accessSync(path)
@@ -51,6 +46,7 @@ function exists(path) {
   return true;
 }
 
+// Get a list of all file paths for files in a directory
 function getItems(path){
   return new Promise((resolve, reject) => {
     fs.readdir(path, (err, items) => {
@@ -63,18 +59,21 @@ function getItems(path){
   });
 }
 
+// Get a string with json extension instead of it's original
 function changeExtension(path) {
   const split = path.split('.');
   const extension = split[split.length-1];
   return path.substring(0,path.length-extension.length)+'json';
 }
 
+// Write the labels as a JSON file
 export function writeLabels(imagePath, labels) {
   const outPath = changeExtension(imagePath);
   fs.writeFileSync(outPath, labels);
   return outPath
 }
 
+// Read the labels from a json file
 export function readLabel(path) {
   const annotations = JSON.parse(fs.readFileSync(path, 'utf8'))[0].labelAnnotations;
   return annotations.map(o=>o.description);

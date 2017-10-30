@@ -2,9 +2,8 @@ import vectorize
 import os
 import flow
 
+# Convert data to vectors and run macine learning
 def main():
-    print("hello")
-
     # Data sets
     IMAGE_TRAINING = "./data/train"
     IMAGE_TEST = "./data/test"
@@ -13,11 +12,10 @@ def main():
     # Training steps
     STEPS = 2000
 
-    # If the training and test sets aren't stored locally, calculate them.
-    # if not os.path.exists(IMAGE_TRAINING) or not os.path.exists(IMAGE_TEST):
-    print('vectorize')
+    # Convert labels to vectors
     vectorize.vectorize(IMAGE_TRAINING, IMAGE_TEST, MIN_COUNT);
 
+    # Run machine learning
     flow.flow(f"{IMAGE_TRAINING}.csv", f"{IMAGE_TEST}.csv",STEPS)
 
 print(__name__)
